@@ -10,12 +10,12 @@
     <form method="post" action="http://localhost:3000/contact.php">
         <p>
             <label for="nom">Nom :</label>
-            <input type="text" name="nom" id="nom">
+            <input type="text" name="nom" id="nom" minlength="3" pattern="[a-z,A-Z]{3,150}">
         </p>
 
         <p>
             <label for="prenom">Prénom :</label>
-            <input type="text" name="prenom" id="prenom">
+            <input type="text" name="prenom" id="prenom" minlength="3" pattern="[a-z,A-Z]{3,150}">
         </p>
 
         <p>
@@ -25,12 +25,12 @@
 
         <p>
             <label for="telephone">Téléphone :</label>
-            <input type="tel" name="telephone" id="telephone">
+            <input type="tel" name="telephone" id="telephone" pattern="[0-9]{1,15}">
         </p>
 
         <p>
             <label for="adresse">Adresse :</label>
-            <input type="text" name="adresse" id="adresse">
+            <input type="text" name="adresse" id="adresse" minlength="10">
         </p>
 
         <input type="submit" value="Envoyer" />
